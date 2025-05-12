@@ -5,7 +5,6 @@ jest.mock('axios');
 describe('throttledGetDataFromApi', () => {
   const url = '/albums'
 
-
   beforeEach(() => {
     jest.useFakeTimers();
     jest.clearAllTimers();

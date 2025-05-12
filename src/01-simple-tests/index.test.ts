@@ -22,10 +22,10 @@ describe('simpleCalculator tests', () => {
   });
 
   test('should return null for invalid action', () => {
-    expect(simpleCalculator({ a: 1, b: 2, action: 'Division' })).toBe(null);
+    expect(simpleCalculator({ a: 1, b: 2, action: 'Division' })).toBeNull();
   });
 
   test('should return null for invalid arguments', () => {
-    expect(simpleCalculator({ a: '1', b: 2, action: Action.Add })).toBe(null);
+    expect(simpleCalculator({ a: '1', b: 2, action: Action.Add })).toBeNull();
   });
 });
